@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - DreamColors</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-container">
+      <div class="logo">
+        <img src="logo.jpg" alt="DreamColors Logo">
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <button id="langToggle">اردو</button>
+        <button id="themeToggle">Dark</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content">
+    <h1 class="page-title lang-en">Get in Touch</h1>
+    <h1 class="page-title lang-ur" style="display:none">ہم سے رابطہ کریں</h1>
+
+    <div class="contact-wrapper">
+      <form class="contact-form">
+        <label for="name" class="lang-en">Name</label>
+        <label for="name" class="lang-ur" style="display:none">نام</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email" class="lang-en">Email</label>
+        <label for="email" class="lang-ur" style="display:none">ای میل</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message" class="lang-en">Message</label>
+        <label for="message" class="lang-ur" style="display:none">پیغام</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+
+      <div class="contact-info">
+        <h2 class="lang-en">Our Location</h2>
+        <h2 class="lang-ur" style="display:none">ہمارا مقام</h2>
+        <p>DreamColors Industry,<br>Karachi, Pakistan</p>
+        <div class="map-placeholder">Google Map</div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 DreamColors Industry. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
